@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.21" useRoundedValues="False">
+
+  <Priority priority1="Keep" priority2="Salvage" priority3="Sell" />
+
+  <Categories>
+    <Category ruleType="PickUp">
+      
+      <!-- Подбирает все магические и выше вещи -->
+      <ItemRule itemType="CraftingPlan" description="Рецепт"/>
+
+      <ItemRule description="Good Quality Rare Items">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="61" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule description="Good Quality Legendary Items">
+        <StatRules>
+          <Rule stat="Quality" value="Legendary" />
+          <Rule stat="Level" minValue="60" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule description="Good Quality Magic Items">
+        <StatRules>
+          <Rule stat="Quality" value="Magic1" />
+          <Rule stat="Level" minValue="55" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemBaseType="Jewelry" description="Rare rings/amu etc. lvl59+">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <!-- Pickup any jewelery 59+ ilvl. -->
+          <Rule stat="Level" minValue="59" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Подбирает стаки золота больше 300 -->
+      <ItemRule itemName="Gold" description="Gold">
+        <StatRules>
+          <Rule stacks="300" />
+        </StatRules>
+      </ItemRule>
+      
+	<!-- Золото РУ Вариант -->
+      <ItemRule itemName="*Золотых" stack="300" />
+      <ItemRule itemName="*Золота" stack="300" />
+      <ItemRule itemName="*Золотой" stack="300" />
+
+      <!-- Подбирает все страницы и книги кузнеца и ювелира -->
+      <ItemRule itemName="Книга*" stack="1" />
+	<!-- English Variant -->
+      <ItemRule itemName="Tome of Secrets" stack="1" />
+
+      
+	  <!-- Подбирает все эскизы кузнеца и ювелира -->
+
+      <!-- Камни -->
+      <ItemRule itemName="Безупречный Квадратный Рубин" description="Gem"/>
+      <ItemRule itemName="Безупречный Квадратный Изумруд" description="Gem"/>
+
+	<!-- English Variant -->
+      <ItemRule itemName="Flawless Square*" description="Gem"/>
+
+      <!-- Зелья -->
+      <ItemRule itemName="*Зелье Здоровья" stack="1" />
+
+	<!-- English Variant -->
+      <ItemRule itemName="*health potion" stack="1" />
+
+      <ItemRule itemName="*Ключ*" description="Key" />
+	<!-- English Variant -->
+      <ItemRule itemName="*Key*" description="Key" />
+
+
+    </Category>
+
+    <Category ruleType="Keep">
+	<ItemRule itemType="CraftingPlan"/>
+      <ItemRule itemName="Tome of Secrets" stack="100" />
+      <ItemRule itemName="*health potion" stack="100" />
+      <ItemRule itemName="Flawless Square*" description="Gem" stack="15" />
+
+      <ItemRule itemName="*Ключ*" description="Key" />
+      <ItemRule itemName="*Key*" description="Key" />
+	  
+	  <!-- Уточнение насчет оставления материалов-->
+          <ItemRule itemName="Книга*" stack="100" />
+          <ItemRule itemName="*Зелье Здоровья" stack="100" />
+          <!-- Камни -->
+          <ItemRule itemName="Безупречный Квадратный*" description="Gem" stack="15" />
+
+
+      <!-- Armor  -->    
+      <ItemRule itemType="Chest" description="Я поднял топ нагрудник!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="60" />
+          <Rule stat="Vitality" minValue="70" />
+          <Rule stat="Sockets" minValue="3" />
+          <Rule stat="Strength" minValue="110" logic="Or" />
+          <Rule stat="Intelligence" minValue="110" logic="Or" />
+          <Rule stat="Dexterity" minValue="110" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Armor  -->    
+      <ItemRule itemType="Cloak" description="Я поднял топ плащ!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="60" />
+          <Rule stat="Vitality" minValue="70" />
+          <Rule stat="Sockets" minValue="3" />
+          <Rule stat="Dexterity" minValue="110" />
+          <Rule stat="MaxDiscipline" minValue="5" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Helms -->
+      <ItemRule itemType="Helm" description="Я поднял топ шлем!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="Vitality" minValue="80" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="Dexterity" minValue="80" logic="Or" />
+          <Rule stat="Intelligence" minValue="80" logic="Or" />          
+          <Rule stat="Strength" minValue="80" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Gloves -->
+      <ItemRule itemType="Gloves" description="Я поднял топ перчатки с кд и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritPercent" minValue="8" />
+          <Rule stat="CritDamagePercent" minValue="20" />
+          <Rule stat="Dexterity" minValue="85" logic="Or" />
+          <Rule stat="Intelligence" minValue="85" logic="Or" />          
+          <Rule stat="Strength" minValue="85" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Gloves -->
+      <ItemRule itemType="Gloves" description="Я поднял топ перчатки с ас и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="AttackSpeedPercent" minValue="8" />
+          <Rule stat="CritPercent" minValue="8" />
+          <Rule stat="Dexterity" minValue="70" logic="Or" />
+          <Rule stat="Intelligence" minValue="70" logic="Or" />          
+          <Rule stat="Strength" minValue="70" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Boots -->
+      <ItemRule itemType="Boots" description="Я поднял топ ботинки!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="MovementSpeed" minValue="12" />
+          <Rule stat="Vitality" minValue="40" />
+          <Rule stat="ResistAll" minValue="55" />
+          <Rule stat="Dexterity" minValue="120" logic="Or" />
+          <Rule stat="Intelligence" minValue="120" logic="Or" />          
+          <Rule stat="Strength" minValue="120" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Pants -->
+      <ItemRule itemType="Legs" description="Я поднял топ штаны!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Sockets" minValue="2" />
+          <Rule stat="Vitality" minValue="80" />
+          <Rule stat="ResistAll" minValue="55" />
+          <Rule stat="Dexterity" minValue="105" logic="Or" />
+          <Rule stat="Intelligence" minValue="105" logic="Or" />          
+          <Rule stat="Strength" minValue="105" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Shoulder -->
+      <ItemRule itemType="Shoulder" description="Я поднял топ наплечники!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Vitality" minValue="110" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="Dexterity" minValue="160" logic="Or" />
+          <Rule stat="Intelligence" minValue="160" logic="Or" />          
+          <Rule stat="Strength" minValue="160" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Bracer -->
+      <ItemRule itemType="Bracer" description="Я поднял топ наручи!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="CritPercent" minValue="4" />
+          <Rule stat="Dexterity" minValue="120" logic="Or" />
+          <Rule stat="Intelligence" minValue="120" logic="Or" />          
+          <Rule stat="Strength" minValue="120" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Belt -->
+      <ItemRule itemType="Belt" description="Я поднял топ пояс!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="60" />
+          <Rule stat="LifePercent" minValue="5" />
+          <Rule stat="Dexterity" minValue="160" logic="Or" />
+          <Rule stat="Intelligence" minValue="160" logic="Or" />          
+          <Rule stat="Strength" minValue="160" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Belt -->
+      <ItemRule itemType="MightyBelt" description="Я поднял топ могучий пояс с вампиризмом!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="70" />
+          <Rule stat="Vitality" minValue="40" />
+          <Rule stat="LifeSteal" minValue="2" />       
+          <Rule stat="Strength" minValue="170" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Ring -->
+      <ItemRule itemType="Ring" description="Я поднял топ ринг с кд и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritDamagePercent" minValue="20" />
+          <Rule stat="CritPercent" minValue="4" />
+          <Rule stat="Dexterity" minValue="70" logic="Or" />
+          <Rule stat="Intelligence" minValue="70" logic="Or" />          
+          <Rule stat="Strength" minValue="70" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Ring Beta <No CD, added as> -->
+      <ItemRule itemType="Ring" description="Я поднял топ ринг с ас и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="AttackSpeedPercent" minValue="5" />
+          <Rule stat="CritPercent" minValue="4" />
+          <Rule stat="Dexterity" minValue="70" logic="Or" />
+          <Rule stat="Intelligence" minValue="70" logic="Or" />          
+          <Rule stat="Strength" minValue="70" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Amulets -->
+      <ItemRule itemType="Amulet" description="Я поднял топ амулет с кд и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritDamagePercent" minValue="40" />
+          <Rule stat="CritPercent" minValue="7" />
+          <Rule stat="Dexterity" minValue="110" logic="Or" />
+          <Rule stat="Intelligence" minValue="110" logic="Or" />          
+          <Rule stat="Strength" minValue="110" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Amulets Beta <No CD, added as> -->
+      <ItemRule itemType="Amulet" description="Я поднял топ амулет с ас и кш!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="AttackSpeedPercent" minValue="7" />
+          <Rule stat="CritPercent" minValue="7" />
+          <Rule stat="Dexterity" minValue="110" logic="Or" />
+          <Rule stat="Intelligence" minValue="110" logic="Or" />          
+          <Rule stat="Strength" minValue="110" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Weapons -->
+	<ItemRule itemBaseType="Weapon" oneHanded="True" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritDamagePercent" minValue="55" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="DPS" minValue="730" />
+          <Rule stat="Dexterity" minValue="100" logic="Or" />
+          <Rule stat="Intelligence" minValue="100" logic="Or" />          
+          <Rule stat="Strength" minValue="100" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Weapons 2h -->
+	<ItemRule itemBaseType="Weapon" oneHanded="False" twoHanded="True" description="Я поднял топ одноручную валыну с кд и дыркой!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritDamagePercent" minValue="140" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="DPS" minValue="1150" />
+          <Rule stat="LifeSteal" minValue="5" />
+          <Rule stat="Dexterity" minValue="190" logic="Or" />
+          <Rule stat="Intelligence" minValue="190" logic="Or" />          
+          <Rule stat="Strength" minValue="190" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
+
+      <!-- Колчан -->
+	<ItemRule itemType="Quiver" description="Я поднял топ колчан!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Dexterity" minValue="180" />
+          <Rule stat="AttackSpeedPercent" minValue="15" />
+          <Rule stat="CritPercent" minValue="8" />
+          <Rule stat="MaxDiscipline" minValue="5" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Сфера -->
+	<ItemRule itemType="Orb" description="Я поднял топ сферу!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Intelligence" minValue="150" />
+          <Rule stat="CritPercent" minValue="8" />
+          <Rule stat="MaxArcanePower" minValue="7" />
+          <Rule stat="WeaponMinDamage" minValue="100" />
+          <Rule stat="WeaponMaxDamage" minValue="280" />
+          <Rule stat="ArcaneOnCrit" minValue="5" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Оберег -->
+	<ItemRule itemType="Mojo" description="Я поднял топ оберег!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Intelligence" minValue="150" />
+          <Rule stat="CritPercent" minValue="8" />
+          <Rule stat="ManaRegen" minValue="8" />
+          <Rule stat="WeaponMinDamage" minValue="100" />
+          <Rule stat="WeaponMaxDamage" minValue="280" />
+        </StatRules>
+      </ItemRule>
+
+      <!-- Щит -->
+	<ItemRule itemType="Shield" description="Я поднял топ щит!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Dexterity" minValue="200" logic="Or" />
+          <Rule stat="Intelligence" minValue="200" logic="Or" />          
+          <Rule stat="Strength" minValue="200" logic="Or" />
+          <Rule stat="Vitality" minValue="150" />
+          <Rule stat="ResistAll" minValue="70" />
+        </StatRules>
+      </ItemRule>>
+
+      <ItemRule description="Я положил легендарочку 60+ lvl, что бы ты утром был рад =)">
+        <StatRules>
+          <Rule stat="Quality" value="Legendary" />
+          <Rule stat="Level" minValue="60" />
+        </StatRules>
+      </ItemRule>
+    </Category>
+	
+
+	<!-- Разлом синих вещей 59 и 60 уровня -->
+    <Category ruleType="Salvage">
+	<ItemRule description="На данный момент на разбор нету вещей!">
+        	<StatRules>
+         	 <Rule stat="Level" maxValue="2" />
+        	</StatRules>
+     	</ItemRule>
+    </Category>
+	
+
+    <Category ruleType="Sell">
+	  
+      <ItemRule description="Продаем все нафиг!">
+        <StatRules>
+          <Rule stat="Quality" value="Magic1" />
+        </StatRules>
+      </ItemRule>
+
+	  <ItemRule itemName="Переливающаяся слеза" />
+	  <ItemRule itemName="Желанная эссенция" />
+	  <ItemRule itemName="Окаменевшее Копыто" />
+	  <ItemRule itemName="Сияющая эссенция" />
+	  <ItemRule itemName="Глаз Ящерицы" />
+    </Category>
+  </Categories>
+</ItemRules>
