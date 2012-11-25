@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.24" useRoundedValues="False">
+<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.34" useRoundedValues="False">
 
   <Priority priority1="Keep" priority2="Salvage" priority3="Sell" />
 
@@ -19,13 +19,6 @@
         <StatRules>
           <Rule stat="Quality" value="Legendary" />
           <Rule stat="Level" minValue="60" />
-        </StatRules>
-      </ItemRule>
-
-      <ItemRule description="Good Quality Magic Items">
-        <StatRules>
-          <Rule stat="Quality" value="Magic1" />
-          <Rule stat="Level" minValue="55" />
         </StatRules>
       </ItemRule>
 
@@ -341,7 +334,6 @@
       <ItemRule description="Продаем все нафиг!">
         <StatRules>
           <Rule stat="Quality" value="Magic1" />
-          <Rule stat="Level" minValue="55" />
         </StatRules>
       </ItemRule>
     </Category>
