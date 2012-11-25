@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.21" useRoundedValues="False">
+<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.24" useRoundedValues="False">
 
   <Priority priority1="Keep" priority2="Salvage" priority3="Sell" />
 
@@ -341,6 +341,7 @@
       <ItemRule description="Продаем все нафиг!">
         <StatRules>
           <Rule stat="Quality" value="Magic1" />
+          <Rule stat="Level" minValue="55" />
         </StatRules>
       </ItemRule>
     </Category>
