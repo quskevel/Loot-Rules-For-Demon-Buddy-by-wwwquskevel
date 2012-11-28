@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.45" useRoundedValues="False">
+<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.64" useRoundedValues="False">
 
   <Priority priority1="Keep" priority2="Salvage" priority3="Sell" />
 
@@ -11,7 +11,28 @@
       <ItemRule description="Good Quality Rare Items">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+     <ItemRule itemType="Gloves" description="Good Quality Gloves Rare Items">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="61" />
+        </StatRules>
+      </ItemRule>
+
+     <ItemRule itemType="Amulet" description="Good Quality Amulet Rare Items">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="59" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Ring" description="Good Quality Ring Rare Items">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="59" />
         </StatRules>
       </ItemRule>
 
