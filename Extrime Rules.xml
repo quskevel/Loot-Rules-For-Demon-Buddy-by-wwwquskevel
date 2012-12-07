@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.64" useRoundedValues="False">
+<ItemRules name="Extrime Rules By wwwquskevel. Release: 1.3.Rev.99max" useRoundedValues="False">
 
   <Priority priority1="Keep" priority2="Salvage" priority3="Sell" />
 
@@ -8,7 +8,84 @@
       
       <ItemRule itemType="CraftingPlan" description="Рецепт"/>
 
-      <ItemRule description="Good Quality Rare Items">
+      <ItemRule itemType="SpiritStone" description="Я поднял топ духовный камень!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="WizardHat" description="Я поднял топ магический шлем!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="VoodooMask" description="Я поднял топ маску вуду!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+ 
+      <ItemRule itemType="Chest" description="Я поднял топ нагрудник!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="63" />
+        </StatRules>
+      </ItemRule>
+   
+      <ItemRule itemType="Cloak" description="Я поднял топ плащ!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Helm" description="Я поднял топ шлем!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Boots" description="Я поднял топ ботинки!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Legs" description="Я поднял топ штаны!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Shoulder" description="Я поднял топ наплечники!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Bracer" description="Я поднял топ наручи!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="61" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="Belt" description="Я поднял топ пояс!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="60" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="MightyBelt" description="Я поднял топ могучий пояс с вампиризмом!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="62" />
@@ -29,7 +106,7 @@
         </StatRules>
       </ItemRule>
 
-      <ItemRule itemType="Ring" description="Good Quality Ring Rare Items">
+      <ItemRule itemType="Ring" description="Good Quality Amulet Rare Items">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="59" />
@@ -46,16 +123,52 @@
       <ItemRule description="Good Quality Rare Items">
         <StatRules>
           <Rule stat="Quality" value="Magic1" />
+          <Rule stat="Level" minValue="64" />
+        </StatRules>
+      </ItemRule>
+
+	<ItemRule itemBaseType="Weapon" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="61" />
+        </StatRules>
+      </ItemRule>
+
+	<ItemRule itemBaseType="Weapon" twoHanded="True" description="Я поднял топ двуручную валыну с кд и дыркой!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="63" />
         </StatRules>
       </ItemRule>
 
-      <ItemRule itemBaseType="Jewelry" description="Rare rings/amu etc. lvl59">
+	<ItemRule itemType="Quiver" description="Я поднял топ колчан!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
-          <Rule stat="Level" minValue="59" />
+          <Rule stat="Level" minValue="62" />
         </StatRules>
       </ItemRule>
+
+	<ItemRule itemType="Orb" description="Я поднял топ сферу!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+	<ItemRule itemType="Mojo" description="Я поднял топ оберег!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
+	<ItemRule itemType="Shield" description="Я поднял топ щит!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Level" minValue="62" />
+        </StatRules>
+      </ItemRule>
+
 
       <ItemRule itemName="Gold" description="Gold">
         <StatRules>
@@ -122,6 +235,36 @@
           <Rule stat="Sockets" minValue="3" />
           <Rule stat="Dexterity" minValue="110" />
           <Rule stat="MaxDiscipline" minValue="5" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="SpiritStone" description="Я поднял топ духовный камень!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="Vitality" minValue="80" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="Dexterity" minValue="140" />
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="WizardHat" description="Я поднял топ магический шлем!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="Vitality" minValue="80" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="Intelligence" minValue="140" />          
+        </StatRules>
+      </ItemRule>
+
+      <ItemRule itemType="VoodooMask" description="Я поднял топ маску вуду!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="Vitality" minValue="80" />
+          <Rule stat="Sockets" minValue="1" />
+          <Rule stat="Intelligence" minValue="160" />          
         </StatRules>
       </ItemRule>
 
@@ -195,6 +338,18 @@
         </StatRules>
       </ItemRule>
 
+      <ItemRule itemType="Shoulder" description="Я поднял топ наплечники!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="Vitality" minValue="40" />
+          <Rule stat="ResistAll" minValue="50" />
+          <Rule stat="LifePercent" minValue="5" />
+          <Rule stat="Dexterity" minValue="160" logic="Or" />
+          <Rule stat="Intelligence" minValue="160" logic="Or" />          
+          <Rule stat="Strength" minValue="160" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
       <ItemRule itemType="Bracer" description="Я поднял топ наручи!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
@@ -238,6 +393,17 @@
         </StatRules>
       </ItemRule>
 
+      <ItemRule itemType="Ring" description="Я поднял топ ринг с кш и лайф перцент!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="CritPercent" minValue="4.5" />
+          <Rule stat="LifePercent" minValue="5" />
+          <Rule stat="Dexterity" minValue="100" logic="Or" />
+          <Rule stat="Intelligence" minValue="100" logic="Or" />          
+          <Rule stat="Strength" minValue="100" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
       <ItemRule itemType="Ring" description="Я поднял топ ринг с ас и кш!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
@@ -260,6 +426,17 @@
         </StatRules>
       </ItemRule>
 
+      <ItemRule itemType="Amulet" description="Я поднял топ амулет с кш и лайф перцент!">
+        <StatRules>
+          <Rule stat="Quality" value="Rare4" />
+          <Rule stat="LifePercent" minValue="9" />
+          <Rule stat="CritPercent" minValue="9" />
+          <Rule stat="Dexterity" minValue="110" logic="Or" />
+          <Rule stat="Intelligence" minValue="110" logic="Or" />          
+          <Rule stat="Strength" minValue="110" logic="Or" />
+        </StatRules>
+      </ItemRule>
+
       <ItemRule itemType="Amulet" description="Я поднял топ амулет с ас и кш!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
@@ -271,7 +448,7 @@
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" oneHanded="True" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
+	<ItemRule itemBaseType="Weapon" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="CritDamagePercent" minValue="55" />
@@ -283,7 +460,7 @@
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" oneHanded="False" twoHanded="True" description="Я поднял топ одноручную валыну с кд и дыркой!">
+	<ItemRule itemBaseType="Weapon" twoHanded="True" description="Я поднял топ одноручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="CritDamagePercent" minValue="140" />
