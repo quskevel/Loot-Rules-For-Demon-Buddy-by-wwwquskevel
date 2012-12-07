@@ -127,14 +127,14 @@
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
+	<ItemRule twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="61" />
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" twoHanded="True" description="Я поднял топ двуручную валыну с кд и дыркой!">
+	<ItemRule twoHanded="True" description="Я поднял топ двуручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="Level" minValue="63" />
@@ -448,7 +448,7 @@
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
+	<ItemRule twoHanded="False" description="Я поднял топ одноручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="CritDamagePercent" minValue="55" />
@@ -460,7 +460,7 @@
         </StatRules>
       </ItemRule>
 
-	<ItemRule itemBaseType="Weapon" twoHanded="True" description="Я поднял топ одноручную валыну с кд и дыркой!">
+	<ItemRule twoHanded="True" description="Я поднял топ одноручную валыну с кд и дыркой!">
         <StatRules>
           <Rule stat="Quality" value="Rare4" />
           <Rule stat="CritDamagePercent" minValue="140" />
